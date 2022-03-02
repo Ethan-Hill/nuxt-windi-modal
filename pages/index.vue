@@ -4,11 +4,7 @@
       Click me
     </button>
 
-    <Modal
-      ref="introModal"
-      modalId="introModal"
-      modalLabel="Introduction-Modal"
-    >
+    <Modal modalId="introModal" modalLabel="Introduction-Modal">
       <div class="relative w-full h-full">
         <h1>Modal title</h1>
         <p>Modal desc</p>
