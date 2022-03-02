@@ -1,17 +1,19 @@
 <template>
-  <teleport to="#modal_overlay">
-    <div
-      :id="modalId"
-      ref="modal"
-      :aria-labelledby="modalAriaLabel"
-      aria-modal="true"
-      class="modal hidden"
-      role="dialog"
-      tabindex="0"
-    >
-      <slot />
-    </div>
-  </teleport>
+  <ClientOnly>
+    <teleport to="#modal_overlay">
+      <div
+        :id="modalId"
+        ref="modal"
+        :aria-labelledby="modalAriaLabel"
+        aria-modal="true"
+        class="modal hidden"
+        role="dialog"
+        tabindex="0"
+      >
+        <slot />
+      </div>
+    </teleport>
+  </ClientOnly>
 </template>
 
 <script setup lang="ts">
